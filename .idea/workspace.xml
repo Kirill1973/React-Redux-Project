@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dbf29c6-5b94-45f6-89e9-acdf5aa2bef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_helpers/scss/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/_helpers/scss/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search-panel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPanel/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search-panel/search-panel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search-panel/search-panel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/app/app.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/App/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/wrapper/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Wrapper/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/wrapper/wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Wrapper/Wrapper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/wrapper/wrapper.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="6dbf29c6-5b94-45f6-89e9-acdf5aa2bef5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/container/Wrapper/Wrapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+            <state relative-caret-position="228">
+              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <marker date="1560353393426" expanded="true" signature="1626:1890" ph="..." />
@@ -296,6 +270,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -330,25 +305,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560328217482</updated>
-      <workItem from="1560328222371" duration="24298000" />
+      <workItem from="1560328222371" duration="24560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24298000" />
+    <option name="totallyTimeSpent" value="24560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3297587" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
@@ -572,8 +546,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/container/Wrapper/Wrapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+        <state relative-caret-position="228">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <marker date="1560353393426" expanded="true" signature="1626:1890" ph="..." />
