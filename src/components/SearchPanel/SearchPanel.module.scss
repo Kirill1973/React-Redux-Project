@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     &__Title {
-        color: $color-letters;
+        color: $color-font;
     }
     &__SearchPanel {
         position: relative;
@@ -15,7 +15,11 @@
         padding: 9px 8px;
         font-size: $main-size;
         border: 1px solid #e4e1e1;
-        width: 151px;
+        width: 189px;
+        border-radius: 5px;
+    }
+    &__SearchInput::-webkit-input-placeholder {
+        color: #e4e1e1;
     }
     &__SearchIcon {
         position: absolute;

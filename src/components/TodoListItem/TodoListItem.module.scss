@@ -1,0 +1,73 @@
+@import '../../_helpers/scss/variables';
+
+.Item {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    &__Input[type='checkbox'] {
+        display: block;
+        margin: 20px auto
+    }
+    &__Input[type='checkbox']:after{
+        line-height: 1.5em;
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: 1px solid $color-theme;
+        border-radius: 3px;
+        background: #fff;
+    }
+    &__Input[type='checkbox']:checked:after {
+        content: "";
+        background-color: #fff;
+        color: #fff;
+        text-align: center;
+        font-size: 13px;
+        line-height: 18px;
+        background: $color-theme;
+        border-color: transparent;
+    }
+    &__Desc {
+        display: flex;
+    }
+    &__ChekBlock {
+        margin-top: -14px;
+    }
+    &__Title {
+        font-size: $main-size;
+        color: $color-font;
+        margin-left: 45px;
+        margin-top: 10px;
+        text-transform: capitalize;
+    }
+    &__Buttons {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__ButtonImportant, &__ButtonEdit, &__ButtonDelete {
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    &__ButtonImportant:focus, &__ButtonEdit:focus, &__ButtonDelete:focus {
+        outline: none;
+    }
+    &__ButtonImportant {
+        color: $color-font;
+    }
+    &__ButtonEdit, &__ButtonDelete {
+        color: $color-font;
+    }
+}
+
+.Important {
+    color: $color-theme;
+}
+
+
+  

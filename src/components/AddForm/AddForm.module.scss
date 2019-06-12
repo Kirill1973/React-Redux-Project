@@ -1,0 +1,37 @@
+@import '../../_helpers/scss/variables'; 
+
+.AddForm {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__Input {
+        font-size: $main-size;
+        padding: 9px 8px;
+        width: 327px;
+        border: 1px solid #e4e1e1;
+        border-radius: 5px;
+    }
+    &__Input::-webkit-input-placeholder {
+        color: #e4e1e1;
+    }
+    &__Button {
+        width: 205px;
+        padding: 9px 8px;
+        font-size: $main-size;
+        position: relative;
+        border: none;
+        background: $color-theme;
+    }
+    &__ButtonIcon {
+        position: absolute;
+        color: white;
+        left: 16px;
+        top: 6px;
+        font-size: 24px;
+    } 
+    &__ButtonText {
+        color: white;
+        margin-left: 14px;
+    }
+}

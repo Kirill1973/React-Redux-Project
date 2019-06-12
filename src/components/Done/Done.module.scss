@@ -1,0 +1,35 @@
+@import '../../_helpers/scss/variables';
+
+.AllDone {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    &__Input[type='checkbox'] {
+        display: block;
+        margin: 20px auto
+    }
+    &__Input[type='checkbox']:after{
+        line-height: 1.5em;
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: 1px solid $color-theme;
+        border-radius: 3px;
+        background: #fff;
+    }
+    &__Input[type='checkbox']:checked:after {
+        content: "";
+        background-color: #fff;
+        color: #fff;
+        text-align: center;
+        font-size: 13px;
+        line-height: 18px;
+        background: $color-theme;
+        border-color: transparent;
+    }
+    &__Title {
+        margin-left: 27px;
+        margin-top: 13px;
+    }
+}
