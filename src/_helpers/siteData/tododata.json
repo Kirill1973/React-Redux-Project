@@ -1,8 +1,8 @@
 {
     "cardsData": [
-        {"label": "Покормить кота", "id": 1, "important": false, "done": false},
-        {"label": "Вынести мусор", "id": 2, "important": false, "done": false},
-        {"label": "Выучить реакт", "id": 3, "important": false, "done": false},
-        {"label": "Продать машину", "id": 4, "important": false, "done": false}
+        {"label": "Покормить кота", "id": 1, "important": false, "done": false, "edit": false},
+        {"label": "Вынести мусор", "id": 2, "important": false, "done": false, "edit": false},
+        {"label": "Выучить реакт", "id": 3, "important": false, "done": false, "edit": false},
+        {"label": "Продать машину", "id": 4, "important": false, "done": false, "edit": false}
     ]
 }

@@ -20,18 +20,9 @@
         border-radius: 3px;
         background: #fff;
     }
-    &__Input[type='checkbox']:checked:after {
-        content: "";
-        background-color: #fff;
-        color: #fff;
-        text-align: center;
-        font-size: 13px;
-        line-height: 18px;
-        background: $color-theme;
-        border-color: transparent;
-    }
     &__Desc {
         display: flex;
+        overflow: hidden;
     }
     &__ChekBlock {
         margin-top: -14px;
@@ -41,7 +32,6 @@
         color: $color-font;
         margin-left: 45px;
         margin-top: 10px;
-        text-transform: capitalize;
     }
     &__Buttons {
         width: 100px;
@@ -53,20 +43,26 @@
         background: none;
         border: none;
         cursor: pointer;
+        color: $color-font;
     }
     &__ButtonImportant:focus, &__ButtonEdit:focus, &__ButtonDelete:focus {
         outline: none;
-    }
-    &__ButtonImportant {
-        color: $color-font;
-    }
-    &__ButtonEdit, &__ButtonDelete {
-        color: $color-font;
     }
 }
 
 .Important {
     color: $color-theme;
+}
+
+.Done[type='checkbox']:after {
+    content: "";
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    background: $color-theme;
+    border-color: transparent;
 }
 
 
