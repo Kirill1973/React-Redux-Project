@@ -20,88 +20,67 @@ export default class Wrapper extends Component {
     }
 
     deleteItem = (id) => {
-      this.setState(({ arrTodoData }) => {
-        const idx = arrTodoData.findIndex(item => item.id === id);
-        const newArr = [...arrTodoData.slice(0, idx), ...arrTodoData.slice(idx + 1)];
-        return {
-          arrTodoData: newArr,
-        };
-      });
+      const { arrTodoData } = this.state;
+      const idx = arrTodoData.findIndex(item => item.id === id);
+      const newArr = [...arrTodoData.slice(0, idx), ...arrTodoData.slice(idx + 1)];
+      this.setState({ arrTodoData: newArr });
     }
 
     onToggleDone = (id) => {
-      this.setState(({ arrTodoData }) => {
-        const idx = arrTodoData.findIndex(item => item.id === id);
-        const item = arrTodoData[idx];
-        item.done = !item.done;
-        const newArr = [...arrTodoData.slice(0, idx), item, ...arrTodoData.slice(idx + 1)];
-        return {
-          arrTodoData: newArr,
-        };
-      });
+      const { arrTodoData } = this.state;
+      const resultArr = this.toggleValue(id, arrTodoData, 'done');
+      this.setState({ arrTodoData: resultArr });
+    }
+
+    toggleValue = (id, arr, propName) => {
+      const idx = arr.findIndex(item => item.id === id);
+      const item = arr[idx];
+      const newItem = { ...item, [propName]: !item[propName] };
+      return [...arr.slice(0, idx), newItem, ...arr.slice(idx + 1)];
     }
 
     onToggleImportant = (id) => {
-      this.setState(({ arrTodoData }) => {
-        const idx = arrTodoData.findIndex(item => item.id === id);
-        const item = arrTodoData[idx];
-        item.important = !item.important;
-        const newArr = [...arrTodoData.slice(0, idx), item, ...arrTodoData.slice(idx + 1)];
-        return {
-          arrTodoData: newArr,
-        };
-      });
+      const { arrTodoData } = this.state;
+      const resultArr = this.toggleValue(id, arrTodoData, 'important');
+      this.setState({ arrTodoData: resultArr });
     }
 
     allItemsDone = () => {
-      this.setState(({ arrTodoData }) => {
-        const DoneArr = arrTodoData.filter(item => item.done === true);
-        const notDoneArr = arrTodoData.filter(item => item.done === false);
-        for (let i = 0; i < notDoneArr.length; i += 1) {
-          notDoneArr[i].done = !notDoneArr[i].done;
+      const { arrTodoData } = this.state;
+      const DoneArr = arrTodoData.filter(item => item.done === true);
+      const notDoneArr = arrTodoData.filter(item => item.done === false);
+      for (let i = 0; i < notDoneArr.length; i += 1) {
+        notDoneArr[i].done = !notDoneArr[i].done;
+      }
+      if (notDoneArr.length === 0) {
+        for (let i = 0; i < DoneArr.length; i += 1) {
+          DoneArr[i].done = !DoneArr[i].done;
         }
-        if (notDoneArr.length === 0) {
-          for (let i = 0; i < DoneArr.length; i += 1) {
-            DoneArr[i].done = !DoneArr[i].done;
-          }
-        }
-        const newArr = [...DoneArr, ...notDoneArr];
-        return {
-          arrTodoData: newArr,
-        };
-      });
+      }
+      const newArr = [...DoneArr, ...notDoneArr];
+      this.setState({ arrTodoData: newArr });
     }
 
     onToggleEdit = (id) => {
-      this.setState(({ arrTodoData, editTerm }) => {
-        let itemValue = editTerm;
-        const idx = arrTodoData.findIndex(item => item.id === id);
-        const item = arrTodoData[idx];
-        item.edit = !item.edit;
-        itemValue = item.label;
-        const newArr = [...arrTodoData.slice(0, idx), item, ...arrTodoData.slice(idx + 1)];
-        return {
-          arrTodoData: newArr,
-          editTerm: itemValue,
-        };
-      });
+      const { arrTodoData } = this.state;
+      const idx = arrTodoData.findIndex(item => item.id === id);
+      const item = arrTodoData[idx];
+      item.edit = !item.edit;
+      const newArr = [...arrTodoData.slice(0, idx), item, ...arrTodoData.slice(idx + 1)];
+      this.setState({ arrTodoData: newArr, editTerm: item.label });
     }
 
     onEdit = (id, text) => {
-      this.setState(({ arrTodoData }) => {
-        const idx = arrTodoData.findIndex(item => item.id === id);
-        const item = arrTodoData[idx];
-        if (text.length === 0) {
-          return {
-            arrTodoData,
-          };
-        }
-        item.label = text;
-        const newArr = [...arrTodoData.slice(0, idx), item, ...arrTodoData.slice(idx + 1)];
-        return {
-          arrTodoData: newArr,
-        };
-      });
+      const { arrTodoData } = this.state;
+      const idx = arrTodoData.findIndex(item => item.id === id);
+      const item = arrTodoData[idx];
+      if (text.length === 0) {
+        return;
+      }
+      item.label = text;
+      const newArr = [...arrTodoData.slice(0, idx), item, ...arrTodoData.slice(idx + 1)];
+
+      this.setState({ arrTodoData: newArr });
     }
 
     filter = (items) => {
@@ -116,16 +95,15 @@ export default class Wrapper extends Component {
     }
 
     onAdd = (text) => {
+      const { arrTodoData } = this.state;
       const itemObj = {
         label: text, id: this.maxId++, important: false, done: false, edit: false,
       };
       if (text.length === 0) {
         return;
       }
-      this.setState(({ arrTodoData }) => {
-        const newArr = [itemObj, ...arrTodoData];
-        return { arrTodoData: newArr };
-      });
+      const newArr = [itemObj, ...arrTodoData];
+      this.setState({ arrTodoData: newArr });
     }
 
     search = (items, term) => {

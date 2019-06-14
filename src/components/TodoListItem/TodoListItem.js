@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faEdit, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Style from './TodoListItem.module.scss';
 
+
 export default class TodoListItem extends Component {
   render() {
     const {
