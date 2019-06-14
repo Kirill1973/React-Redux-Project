@@ -10,7 +10,7 @@
     }
     &__Input[type='checkbox']:after{
         line-height: 1.5em;
-        content: '';
+        content: "";
         display: inline-block;
         width: 25px;
         height: 25px;
@@ -19,7 +19,7 @@
         background: #fff;
     }
     &__Input[type='checkbox']:checked:after {
-        content: "";
+        content: url("../../_helpers/img/check-mark.svg");
         background-color: #fff;
         color: #fff;
         text-align: center;

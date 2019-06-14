@@ -26,6 +26,15 @@
     }
     &__ChekBlock {
         margin-top: -14px;
+        position: relative;
+    }
+    &__Icon {
+        position: absolute;
+        top: 23px;
+        left: 3px;
+        font-size: 21px;
+        color: white;
+        display: none;
     }
     &__Title {
         font-size: $main-size;
@@ -55,7 +64,7 @@
 }
 
 .Done[type='checkbox']:after {
-    content: "";
+    content: url("../../_helpers/img/check-mark.svg");
     background-color: #fff;
     color: #fff;
     text-align: center;
@@ -65,5 +74,8 @@
     border-color: transparent;
 }
 
+.Block {
+    display: block !important;
+}
 
   
