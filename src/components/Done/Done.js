@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Style from './Done.module.scss';
 
 export default class Done extends Component {
@@ -14,3 +15,7 @@ export default class Done extends Component {
     );
   }
 }
+
+Done.propTypes = {
+  onAllItemDone: PropTypes.func,
+};

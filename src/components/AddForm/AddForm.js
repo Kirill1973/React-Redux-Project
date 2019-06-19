@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import Style from './AddForm.module.scss';
@@ -6,7 +7,7 @@ import Style from './AddForm.module.scss';
 export default class AddForm extends Component {
   state = {
     label: '',
-  }
+  };
 
   onSubmit = (event) => {
     const { onAdd } = this.props;
@@ -14,11 +15,11 @@ export default class AddForm extends Component {
     event.preventDefault();
     onAdd(label);
     this.setState({ label: '' });
-  }
+  };
 
   onLabelChange = (event) => {
     this.setState({ label: event.target.value });
-  }
+  };
 
   render() {
     const { label } = this.state;
@@ -33,3 +34,7 @@ export default class AddForm extends Component {
     );
   }
 }
+
+AddForm.propTypes = {
+  onAdd: PropTypes.func,
+};

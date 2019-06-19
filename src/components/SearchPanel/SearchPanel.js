@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Style from './SearchPanel.module.scss';
@@ -6,14 +7,14 @@ import Style from './SearchPanel.module.scss';
 export default class SearchPanel extends Component {
   state = {
     term: '',
-  }
+  };
 
   onSearchChange = (event) => {
     const term = event.target.value;
     const { onSearchChange } = this.props;
     this.setState({ term });
     onSearchChange(term);
-  }
+  };
 
   render() {
     const { term } = this.state;
@@ -29,3 +30,7 @@ export default class SearchPanel extends Component {
     );
   }
 }
+
+SearchPanel.propTypes = {
+  onSearchChange: PropTypes.func,
+};
