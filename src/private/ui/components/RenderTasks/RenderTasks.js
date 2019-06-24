@@ -8,19 +8,19 @@ import TodoListItem from '../TodoListItem';
 export default class RenderTasks extends Component {
     handleDoneEnter = (elem) => {
       TweenMax.fromTo(elem, 1, { y: -150 }, { y: 0 });
-    }
+    };
 
     handleDoneExit = (elem) => {
       TweenMax.fromTo(elem, 1, { y: 150 }, { y: 0 });
-    }
+    };
 
     handleImportantEnter = (elem) => {
       TweenMax.fromTo(elem, 1, { y: 150 }, { y: 0 });
-    }
+    };
 
     handleImportantExit = (elem) => {
       TweenMax.fromTo(elem, 1, { y: -150 }, { y: 0 });
-    }
+    };
 
     render() {
       const {

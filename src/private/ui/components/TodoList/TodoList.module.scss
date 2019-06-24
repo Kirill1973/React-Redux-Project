@@ -1,0 +1,21 @@
+.TodoItems {
+    margin-top: 26px;
+    transition: 3s;
+}
+.ExampleEnter {
+    opacity: 0.01;
+}
+
+.ExampleEnter.ExampleEnterActive {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.ExampleLeave {
+    opacity: 1;
+}
+
+.ExampleLeave.ExampleLeaveActive {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}

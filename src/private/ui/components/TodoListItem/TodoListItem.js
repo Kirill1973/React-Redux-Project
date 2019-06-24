@@ -10,13 +10,13 @@ import Style from './TodoListItem.module.scss';
 export default class TodoListItem extends Component {
   state = {
     editLabel: '',
-  }
+  };
 
   onKeyDown = (event) => {
     if (event.keyCode === 27) {
       this.onClickEdit();
     }
-  }
+  };
 
   componentDidMount() {
     const { label } = this.props;
@@ -25,7 +25,7 @@ export default class TodoListItem extends Component {
 
   onChangeLabel = (event) => {
     this.setState({ editLabel: event.target.value });
-  }
+  };
 
   onSubmit = (event) => {
     const { onEdit, id, onToggleEdit } = this.props;
@@ -33,13 +33,13 @@ export default class TodoListItem extends Component {
     event.preventDefault();
     onEdit(id, editLabel);
     onToggleEdit(id);
-  }
+  };
 
   onClickEdit = () => {
     const { onToggleEdit, label, id } = this.props;
     onToggleEdit(id);
     this.setState({ editLabel: label });
-  }
+  };
 
   render() {
     const { editLabel } = this.state;
