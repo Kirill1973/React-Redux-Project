@@ -4,7 +4,7 @@ import { asyncTypes } from './asyncTypes';
 
 import { getData } from './workers/getData';
 import { removeItem } from './workers/removeItem';
-import { toggleProperties } from './workers/toggleDone';
+import { toggleProperties } from './workers/toggleProperties';
 
 function* watchGetData() {
   yield takeEvery(asyncTypes.GET_DATA_ASYNC, getData);

@@ -1,68 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Техническое задание:
+1.  Суть задания: сделать хорошо работающий **Планировщик задач**, основываясь на референтной версии приложения или PNG макете;
+2.  Добавлять задачи нужно через поле сверху («Описание моей новой задачи»), длинной не более `50 символов`;
+3.  При нажатии на кнопку «Добавить задачу» или «Enter» поле ввода должно стать пустым, а новая задача добавиться в начало списка задач;
+4.  Задачу с пустой строкой добавить нельзя;
+5.  Порядок отображения задач:
+    -  Приоритетные;
+    -  Обычные;
+    -  Выполненные.
+6.  Задачу можно отметить как приоритетную, нажав на звёздочку. А также — как не приоритетную при повторном нажатии:
+    -  При этом, приоритетная задача должна переместиться в самый верх списка (сперва приоритетные);
+    -  А не приоритетная — обратно в список не приоритетных.
+7.  Задачу можно отметить как выполненную, нажав на чекбокс слева, и как не выполненную при повторном нажатии:
+    -  При этом, задачи, отмеченные как выполненные должны перемещаться в конец списка;
+    -  При перемещении из выполненных в не выполненные задача должна располагаться после приоритетных — если задача не приоритетная, или вместе с остальными приоритетными — если задача приоритетная;
+    -  Главное — сохранять консистентность групп задач, сохранять точное расположение внутри группы не обязательно, но желательно
+8.  Текст задачи можно редактировать, нажав на карандашик, максимальная длинна сообщение — `50 символов`:
+    -  При входе в режим редактирования ввод пользователя должен сфокусировать на элементе `<input />`;
+    -  При повторном нажатии на клавишу `Enter`, новый текст задачи должен сохраниться в состоянии, а режим редактирования выключится;
+    -  При нажатии на `Escape`, или при повторном нажатии на карандашик текст задачи должен вернуться в исходное состояние, до входа в режим редактирования, а режим редактирования должен выключиться.
+9.  Задачу можно удалить, нажав на крестик;
+10.  При нажатии на чекбокс «Все задачи выполнены», все задачи должны быть отмечены как выполненные (отмечать задачи как «все не выполненные» в обратную сторону не нужно);
+11.  При вводе сообщения в поле «Поиск», задачи должны фильтроваться;
+12.  Анимировать добавление и удаление задач;
+13.  Анимировать перемещение задач в приоритетные, выполненные и обратно.
+14.  Первые 2 секунды, нужно вместо приложения показывать "spinner".
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Внешний вид:
+![png-example](./example.png)

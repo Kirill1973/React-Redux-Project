@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85cca378-831c-47bc-a432-28c84d21caab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jest/cssTransform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jest/fileTransform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/paths.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/pnpTs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpackDevServer.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/start.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/config/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/reducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncAction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/watchers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/getData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/removeItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/toggleProperties.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/init/middleware/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/init/rootReducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/init/rootSaga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/engine/init/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/_helpers/img/check-mark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/_helpers/scss/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/_helpers/siteData/tododata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/AddForm/AddForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/AddForm/AddForm.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/AddForm/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Done/Done.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Done/Done.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Done/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/RenderTasks/RenderTasks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/RenderTasks/RenderTasks.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/RenderTasks/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/SearchPanel/SearchPanel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/SearchPanel/SearchPanel.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/SearchPanel/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Spinner/Spinner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Spinner/Spinner.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Spinner/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoList/TodoList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoList/TodoList.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoList/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoListItem/TodoListItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoListItem/TodoListItem.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoListItem/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/container/App/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/container/App/App.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/container/App/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/container/Wrapper/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/container/Wrapper/Wrapper.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/private/ui/container/Wrapper/index.js" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/node_modules/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>onToggleEdit</find>
+      <find>imm</find>
+      <find>removeItem</find>
+      <find>REMOVE_ITEM</find>
+      <find>rules</find>
+      <find>no-underscore-dangle</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/TodoList/TodoList.module.scss" />
+        <option value="$PROJECT_DIR$/src/components/TodoList/TodoList.js" />
+        <option value="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.js" />
+        <option value="$PROJECT_DIR$/src/components/RenderTasks/RenderTasks.js" />
+        <option value="$PROJECT_DIR$/src/container/Wrapper/Wrapper.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/data/saga/asyncTypes.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/data/saga/watchers.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/data/types.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/data/actions.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/init/routeReducers.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/init/middleware/index.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/private/ui/container/App/App.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/data/reducers.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/data/saga/asyncAction.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/data/saga/workers/getData.js" />
+        <option value="$PROJECT_DIR$/src/private/ui/components/AddForm/AddForm.js" />
+        <option value="$PROJECT_DIR$/src/private/ui/components/SearchPanel/SearchPanel.js" />
+        <option value="$PROJECT_DIR$/src/private/ui/components/Done/Done.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/removeItem/types.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/removeItem/saga/asyncTypes.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/removeItem/actions.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/removeItem/saga/asyncAction.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/removeItem/saga/workers/removeItemWorker.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/saga/asyncTypes.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/saga/asyncAction.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/types.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/saga/workers/removeItem.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/config/api.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/saga/workers/getData.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/actions.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/reducers.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/init/rootReducers.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/init/rootSaga.js" />
+        <option value="$PROJECT_DIR$/src/private/ui/container/Wrapper/Wrapper.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/getData.js" />
+        <option value="$PROJECT_DIR$/src/private/ui/components/TodoList/TodoList.module.scss" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/removeItem.js" />
+        <option value="$PROJECT_DIR$/.eslintrc" />
+        <option value="$PROJECT_DIR$/src/private/engine/init/store.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/todoData/types.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncTypes.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/todoData/reducers.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncAction.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/todoData/actions.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/toggleDone.js" />
+        <option value="$PROJECT_DIR$/src/private/ui/components/TodoList/TodoList.js" />
+        <option value="$PROJECT_DIR$/src/private/ui/components/RenderTasks/RenderTasks.js" />
+        <option value="$PROJECT_DIR$/src/private/ui/components/TodoListItem/TodoListItem.js" />
+        <option value="$PROJECT_DIR$/src/private/engine/core/todoData/saga/watchers.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="130" />
+    <option name="y" value="185" />
+    <option name="width" value="1575" />
+    <option name="height" value="1030" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../todoCustom" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\todo\src\private\engine\config" />
+      <recent name="D:\work\todo\src\components\RenderTasks" />
+      <recent name="D:\work\todo\src\components\TodoList" />
+      <recent name="D:\work\todo\src\components\TodoListRender" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85cca378-831c-47bc-a432-28c84d21caab" name="Default Changelist" comment="" />
+      <created>1560841532929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560841532929</updated>
+      <workItem from="1560841544061" duration="344000" />
+      <workItem from="1560855644408" duration="1345000" />
+      <workItem from="1560927973943" duration="29062000" />
+      <workItem from="1561013934146" duration="5407000" />
+      <workItem from="1561102399538" duration="1528000" />
+      <workItem from="1561111809955" duration="1613000" />
+      <workItem from="1561114698449" duration="9875000" />
+      <workItem from="1561204928429" duration="6903000" />
+      <workItem from="1561288988743" duration="6019000" />
+      <workItem from="1561359870871" duration="2490000" />
+      <workItem from="1561363055972" duration="24625000" />
+      <workItem from="1561446279648" duration="3683000" />
+      <workItem from="1561451142839" duration="17410000" />
+      <workItem from="1561532605219" duration="6907000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="119686000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24765101" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25503355" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/container/App/App.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/TodoList/TodoList.module.scss" />
+    <entry file="file://$PROJECT_DIR$/src/components/RenderTasks/RenderTasks.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/Done/Done.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/TodoList/TodoList.js" />
+    <entry file="file://$PROJECT_DIR$/src/container/Wrapper/Wrapper.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@redux-saga/core/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="168" column="2" selection-start-line="168" selection-start-column="2" selection-end-line="168" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/container/App/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/container/App/App.module.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/container/Wrapper/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/container/Wrapper/Wrapper.module.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/config/tododata.json" />
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/TodoList/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/container/App/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/AddForm/AddForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/SearchPanel/SearchPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/Done/Done.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/Done/Done.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/reducers.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/types.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/saga/asyncAction.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/saga/asyncTypes.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/saga/watchers.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/actions.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/saga/workers/removeItemWorker.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/TodoList/TodoList.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/immutable/dist/immutable-nonambient.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="795" column="4" selection-start-line="795" selection-start-column="4" selection-end-line="795" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/container/Wrapper/Wrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/init/middleware/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/init/rootReducers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/config/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/init/rootSaga.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/removeItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/RenderTasks/RenderTasks.module.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="104" column="35" lean-forward="true" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/init/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/getData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/toggleProperties.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/reducers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/TodoList/TodoList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/RenderTasks/RenderTasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/TodoListItem/TodoListItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="34" column="108" selection-start-line="34" selection-start-column="108" selection-end-line="34" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/watchers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

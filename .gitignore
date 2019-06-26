@@ -1,24 +1,24 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/.idea
-/node_modules
-/.pnp
-.pnp.js
+todo-list-redux/.idea
+todo-list-redux/node_modules
+todo-list-redux/.pnp
+todo-list-redux/.pnp.js
 
 # testing
-/coverage
+todo-list-redux/coverage
 
 # production
-/build
+todo-list-redux/build
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+todo-list-redux/.DS_Store
+todo-list-redux/.env.local
+todo-list-redux/.env.development.local
+todo-list-redux/.env.test.local
+todo-list-redux/.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+todo-list-redux/npm-debug.log*
+todo-list-redux/yarn-debug.log*
+todo-list-redux/yarn-error.log*
