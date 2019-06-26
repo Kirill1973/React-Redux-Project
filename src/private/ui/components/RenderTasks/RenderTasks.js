@@ -23,9 +23,7 @@ export default class RenderTasks extends Component {
     };
 
     render() {
-      const {
-        item, onDelete, onToggleDone, onToggleImportant, onToggleEdit, onEdit,
-      } = this.props;
+      const { item, removeItem, onToggleDone } = this.props;
       const {
         id, label, done, important, edit,
       } = item;
@@ -48,11 +46,8 @@ export default class RenderTasks extends Component {
                   edit={edit}
                   important={important}
                   label={label}
-                  onDelete={() => onDelete(id)}
+                  removeItem={() => removeItem(id)}
                   onToggleDone={() => onToggleDone(id)}
-                  onToggleImportant={() => onToggleImportant(id)}
-                  onToggleEdit={() => onToggleEdit(id)}
-                  onEdit={onEdit}
                 />
               </div>
             </Transition>
