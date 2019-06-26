@@ -7,7 +7,7 @@ import {
 import Style from './TodoListItem.module.scss';
 
 const TodoListItem = ({
-  important, done, edit, label, removeItem, onToggleDone,
+  important, done, edit, label, removeItem, onToggleProperties, id,
 }) => {
   const className = cx(Style.Item__ButtonImportant, {
     [Style.Important]: important,
@@ -22,17 +22,17 @@ const TodoListItem = ({
     <div className={Style.Item}>
       <div className={Style.Item__Desc}>
         <div className={Style.Item__ChekBlock}>
-          <input type="checkbox" className={classNameDone} onChange={onToggleDone} />
+          <input type="checkbox" className={classNameDone} onChange={() => onToggleProperties(id, 'done')} />
         </div>
         <form>
           <input type="text" value={label} className={classNameEdit} disabled={!edit} />
         </form>
       </div>
       <div className={Style.Item__Buttons}>
-        <button type="button" className={className}>
+        <button type="button" className={className} onClick={() => onToggleProperties(id, 'important')}>
           <FontAwesomeIcon icon={faStar} />
         </button>
-        <button type="button" className={Style.Item__ButtonEdit}>
+        <button type="button" className={Style.Item__ButtonEdit} onClick={() => onToggleProperties(id, 'edit')}>
           <FontAwesomeIcon icon={faEdit} />
         </button>
         <button type="button" className={Style.Item__ButtonDelete} onClick={removeItem}>

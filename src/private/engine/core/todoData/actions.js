@@ -16,8 +16,8 @@ export const dataActions = Object.freeze({
     type: types.REMOVE_ITEM,
     payload: newArrData,
   }),
-  onToggleDone: newArrData => ({
-    type: types.ON_TOGGLE_DONE,
+  onToggleProperties: newArrData => ({
+    type: types.ON_TOGGLE_PROPERTIES,
     payload: newArrData,
   }),
 });

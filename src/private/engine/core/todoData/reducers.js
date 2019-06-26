@@ -19,7 +19,7 @@ export const dataReducer = (state = initialState, { payload, type }) => {
       return state.merge({ request: false, success: false, errors: payload });
     case types.REMOVE_ITEM:
       return state.set('mainData', payload);
-    case types.ON_TOGGLE_DONE:
+    case types.ON_TOGGLE_PROPERTIES:
       return state.set('mainData', payload);
     default:
       return state;

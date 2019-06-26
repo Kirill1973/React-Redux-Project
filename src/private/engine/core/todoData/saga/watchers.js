@@ -4,7 +4,7 @@ import { asyncTypes } from './asyncTypes';
 
 import { getData } from './workers/getData';
 import { removeItem } from './workers/removeItem';
-import { toggleDone } from './workers/toggleDone';
+import { toggleProperties } from './workers/toggleDone';
 
 function* watchGetData() {
   yield takeEvery(asyncTypes.GET_DATA_ASYNC, getData);
@@ -14,14 +14,14 @@ function* watchRemoveItem() {
   yield takeEvery(asyncTypes.REMOVE_ITEM_ASYNC, removeItem);
 }
 
-function* watchToggleDone() {
-  yield takeEvery(asyncTypes.TOGGLE_DONE_ASYNC, toggleDone);
+function* watchToggleProperties() {
+  yield takeEvery(asyncTypes.TOGGLE_PROPERTIES_ASYNC, toggleProperties);
 }
 
 export function* watcherData() {
   yield all([
     watchGetData(),
     watchRemoveItem(),
-    watchToggleDone(),
+    watchToggleProperties(),
   ]);
 }

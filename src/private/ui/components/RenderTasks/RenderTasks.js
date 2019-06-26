@@ -23,7 +23,7 @@ export default class RenderTasks extends Component {
     };
 
     render() {
-      const { item, removeItem, onToggleDone } = this.props;
+      const { item, removeItem, onToggleProperties } = this.props;
       const {
         id, label, done, important, edit,
       } = item;
@@ -47,7 +47,7 @@ export default class RenderTasks extends Component {
                   important={important}
                   label={label}
                   removeItem={() => removeItem(id)}
-                  onToggleDone={() => onToggleDone(id)}
+                  onToggleProperties={onToggleProperties}
                 />
               </div>
             </Transition>

@@ -12,7 +12,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = {
   getData: asyncActionWithData.getDataAsync,
   removeItem: asyncActionWithData.removeItemAsync,
-  onToggleDone: asyncActionWithData.onToggleDoneAsync,
+  onToggleProperties: asyncActionWithData.onTogglePropertiesAsync,
 };
 
 @connect(
@@ -27,7 +27,7 @@ export default class TodoList extends Component {
   }
 
   render() {
-    const { data: { cardsData }, removeItem, onToggleDone } = this.props;
+    const { data: { cardsData }, removeItem, onToggleProperties } = this.props;
     if (cardsData) {
       return (
         <div className={Style.TodoItems}>
@@ -39,7 +39,7 @@ export default class TodoList extends Component {
                   key={id}
                   item={item}
                   removeItem={removeItem}
-                  onToggleDone={onToggleDone}
+                  onToggleProperties={onToggleProperties}
                 />
               );
             })
