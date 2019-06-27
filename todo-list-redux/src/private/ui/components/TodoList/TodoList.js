@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { asyncActionTodoList } from '../../../engine/core/todoData/saga/asyncAction';
@@ -9,6 +10,7 @@ import RenderTasks from '../RenderTasks';
 const mapStateToProps = state => ({
   data: state.todoListData.get('todoListArray'),
   searchTerm: state.todoListData.get('searchTerm'),
+  loading: state.todoListData.get('success'),
 });
 
 const mapDispatchToProps = {
@@ -26,7 +28,7 @@ const mapDispatchToProps = {
 export default class TodoList extends Component {
   componentDidMount() {
     const { getData } = this.props;
-    getData();
+    setTimeout(() => (getData()), 2000);
   }
 
   searchItem = (arr, term) => {
@@ -34,7 +36,7 @@ export default class TodoList extends Component {
       return arr;
     }
     return arr.filter(item => item.label.toLowerCase().indexOf(term.toLowerCase()) > -1);
-  }
+  };
 
   filterItems = (arr) => {
     const importantItems = arr.filter(item => item.important === true && item.done === false);
@@ -42,14 +44,14 @@ export default class TodoList extends Component {
     const simpleItems = arr.filter(item => item.important === false && item.done === false);
     const doneAndImportantItems = arr.filter(item => item.done === true && item.important === true);
     return [...importantItems, ...simpleItems, ...doneAndImportantItems, ...doneItems];
-  }
+  };
 
   render() {
     const {
-      data, removeItem, onToggleProperties, searchTerm, onEditItem,
+      data, removeItem, onToggleProperties, searchTerm, onEditItem, loading,
     } = this.props;
     const visibleArrData = this.filterItems(this.searchItem(data, searchTerm));
-    if (visibleArrData) {
+    if (visibleArrData && loading) {
       return (
         <div className={Style.TodoItems}>
           <ReactCSSTransitionGroup
@@ -87,3 +89,13 @@ export default class TodoList extends Component {
     );
   }
 }
+
+TodoList.propTypes = {
+  data: PropTypes.array,
+  searchTerm: PropTypes.string,
+  getData: PropTypes.func,
+  removeItem: PropTypes.func,
+  onToggleProperties: PropTypes.func,
+  onEditItem: PropTypes.func,
+  loading: PropTypes.bool,
+};

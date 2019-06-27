@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -20,19 +21,19 @@ export default class TodoListItem extends Component {
     const { current: { value } } = this.textInput;
     onEditItem(id, value);
     onToggleProperties(id, 'edit');
-  }
+  };
 
   onEditChange = () => {
     const { onToggleProperties, id, label } = this.props;
     this.textInput.current.value = label;
     onToggleProperties(id, 'edit');
-  }
+  };
 
   onKeyDown = (event) => {
     if (event.keyCode === 27) {
       this.onEditChange();
     }
-  }
+  };
 
   render() {
     const {
@@ -72,3 +73,14 @@ export default class TodoListItem extends Component {
     );
   }
 }
+
+TodoListItem.propTypes = {
+  label: PropTypes.string,
+  id: PropTypes.number,
+  important: PropTypes.bool,
+  edit: PropTypes.bool,
+  done: PropTypes.bool,
+  removeItem: PropTypes.func,
+  onToggleProperties: PropTypes.func,
+  onEditItem: PropTypes.func,
+};

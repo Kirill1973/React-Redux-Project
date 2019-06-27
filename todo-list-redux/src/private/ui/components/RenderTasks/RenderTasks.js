@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import TweenMax from 'gsap';
 import cx from 'classnames';
 import { Transition } from 'react-transition-group';
@@ -59,3 +60,7 @@ export default class RenderTasks extends Component {
       );
     }
 }
+
+RenderTasks.propsTypes = {
+  item: PropTypes.object,
+};

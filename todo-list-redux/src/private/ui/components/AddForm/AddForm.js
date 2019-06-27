@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
@@ -25,7 +26,7 @@ export default class AddForm extends Component {
       addItem(value);
     }
     this.textInput.current.value = '';
-  }
+  };
 
   render() {
     return (
@@ -39,3 +40,7 @@ export default class AddForm extends Component {
     );
   }
 }
+
+AddForm.propTypes = {
+  addItem: PropTypes.func,
+};

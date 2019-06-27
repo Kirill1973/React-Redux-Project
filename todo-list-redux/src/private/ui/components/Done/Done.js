@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { asyncActionTodoList } from '../../../engine/core/todoData/saga/asyncAction';
 import Style from './Done.module.scss';
@@ -25,3 +26,7 @@ export default class Done extends Component {
     );
   }
 }
+
+Done.propTypes = {
+  onAllItemsDone: PropTypes.func,
+};

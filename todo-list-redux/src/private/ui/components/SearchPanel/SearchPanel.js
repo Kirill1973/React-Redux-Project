@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -21,7 +22,7 @@ export default class SearchPanel extends Component {
       const { current: { value } } = this.textInput;
       const { searchItems } = this.props;
       searchItems(value.toLowerCase());
-    }
+    };
 
     render() {
       return (
@@ -35,3 +36,7 @@ export default class SearchPanel extends Component {
       );
     }
 }
+
+SearchPanel.propTypes = {
+  searchItems: PropTypes.func,
+};
