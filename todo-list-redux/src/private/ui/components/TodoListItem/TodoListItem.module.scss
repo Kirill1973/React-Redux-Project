@@ -20,6 +20,9 @@
         border-radius: 3px;
         background: #fff;
     }
+    &__Input:hover {
+        cursor: pointer;
+    }
     &__Desc {
         display: flex;
         overflow: hidden;

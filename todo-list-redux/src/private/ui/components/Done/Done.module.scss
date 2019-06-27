@@ -28,6 +28,9 @@
         background: $color-theme;
         border-color: transparent;
     }
+    &__Input:hover {
+        cursor: pointer;
+    }
     &__Title {
         margin-left: 27px;
         margin-top: 13px;
