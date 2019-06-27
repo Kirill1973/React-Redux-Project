@@ -1,12 +1,12 @@
 import { types } from './types';
 
-export const dataActions = Object.freeze({
+export const todoListDataActions = Object.freeze({
   dataRequest: () => ({
     type: types.DATA_REQUEST,
   }),
-  dataSuccess: mainData => ({
+  dataSuccess: newArrData => ({
     type: types.DATA_SUCCESS,
-    payload: mainData,
+    payload: newArrData,
   }),
   dataFailure: errors => ({
     type: types.DATA_FAILURE,
@@ -18,6 +18,22 @@ export const dataActions = Object.freeze({
   }),
   onToggleProperties: newArrData => ({
     type: types.ON_TOGGLE_PROPERTIES,
+    payload: newArrData,
+  }),
+  onAddItem: newArrData => ({
+    type: types.ON_ADD_ITEM,
+    payload: newArrData,
+  }),
+  onSearchItems: term => ({
+    type: types.ON_SEARCH_ITEMS,
+    payload: term,
+  }),
+  onEditItem: newArrData => ({
+    type: types.ON_EDIT_ITEM,
+    payload: newArrData,
+  }),
+  onAllItemsDone: newArrData => ({
+    type: types.ON_ALL_ITEMS_DONE,
     payload: newArrData,
   }),
 });

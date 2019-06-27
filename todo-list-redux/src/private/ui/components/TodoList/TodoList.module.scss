@@ -9,19 +9,19 @@
 }
 
 .ExampleEnter {
-    opacity: 0.01;
+    transform: translateX(-100%);
 }
 
 .ExampleEnter.ExampleEnterActive {
-    opacity: 1;
-    transition: opacity 500ms ease-in;
+    transform: translateX(0);
+    transition: transform 0.5s ease ;
 }
 
 .ExampleLeave {
-    opacity: 1;
+    transform: translateX(0);
 }
 
 .ExampleLeave.ExampleLeaveActive {
-    opacity: 0.01;
-    transition: opacity 300ms ease-in;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease ;
 }

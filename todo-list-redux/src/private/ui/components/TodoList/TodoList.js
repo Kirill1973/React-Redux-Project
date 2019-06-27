@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { asyncActionWithData } from '../../../engine/core/todoData/saga/asyncAction';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { asyncActionTodoList } from '../../../engine/core/todoData/saga/asyncAction';
 import Spinner from '../Spinner';
 import Style from './TodoList.module.scss';
 import RenderTasks from '../RenderTasks';
 
 const mapStateToProps = state => ({
-  data: state.dataReducer.get('mainData'),
+  data: state.todoListData.get('todoListArray'),
+  searchTerm: state.todoListData.get('searchTerm'),
 });
 
 const mapDispatchToProps = {
-  getData: asyncActionWithData.getDataAsync,
-  removeItem: asyncActionWithData.removeItemAsync,
-  onToggleProperties: asyncActionWithData.onTogglePropertiesAsync,
+  getData: asyncActionTodoList.getDataAsync,
+  removeItem: asyncActionTodoList.removeItemAsync,
+  onToggleProperties: asyncActionTodoList.onTogglePropertiesAsync,
+  onEditItem: asyncActionTodoList.editItemAsync,
 };
 
 @connect(
@@ -26,24 +29,54 @@ export default class TodoList extends Component {
     getData();
   }
 
+  searchItem = (arr, term) => {
+    if (term.length === 0) {
+      return arr;
+    }
+    return arr.filter(item => item.label.toLowerCase().indexOf(term.toLowerCase()) > -1);
+  }
+
+  filterItems = (arr) => {
+    const importantItems = arr.filter(item => item.important === true && item.done === false);
+    const doneItems = arr.filter(item => item.done === true && item.important === false);
+    const simpleItems = arr.filter(item => item.important === false && item.done === false);
+    const doneAndImportantItems = arr.filter(item => item.done === true && item.important === true);
+    return [...importantItems, ...simpleItems, ...doneAndImportantItems, ...doneItems];
+  }
+
   render() {
-    const { data: { cardsData }, removeItem, onToggleProperties } = this.props;
-    if (cardsData) {
+    const {
+      data, removeItem, onToggleProperties, searchTerm, onEditItem,
+    } = this.props;
+    const visibleArrData = this.filterItems(this.searchItem(data, searchTerm));
+    if (visibleArrData) {
       return (
         <div className={Style.TodoItems}>
-          {
-            cardsData.map((item) => {
-              const { id } = item;
-              return (
-                <RenderTasks
-                  key={id}
-                  item={item}
-                  removeItem={removeItem}
-                  onToggleProperties={onToggleProperties}
-                />
-              );
-            })
+          <ReactCSSTransitionGroup
+            transitionName={{
+              enter: Style.ExampleEnter,
+              enterActive: Style.ExampleEnterActive,
+              leave: Style.ExampleLeave,
+              leaveActive: Style.ExampleLeaveActive,
+            }}
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={500}
+          >
+            {
+              visibleArrData.map((item) => {
+                const { id } = item;
+                return (
+                  <RenderTasks
+                    key={id}
+                    item={item}
+                    removeItem={removeItem}
+                    onToggleProperties={onToggleProperties}
+                    onEditItem={onEditItem}
+                  />
+                );
+              })
             }
+          </ReactCSSTransitionGroup>
         </div>
       );
     }

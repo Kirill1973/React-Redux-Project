@@ -24,6 +24,9 @@
         background: $color-theme;
         border-radius: 5px;
     }
+    &__Button:hover {
+        cursor: pointer;
+    }
     &__ButtonIcon {
         position: absolute;
         color: white;

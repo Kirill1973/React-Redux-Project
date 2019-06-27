@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import { dataReducer } from '../core/todoData/reducers';
+import { todoListDataReducer as todoListData } from '../core/todoData/reducers';
 
 export const rootReducers = () => combineReducers({
-  dataReducer,
+  todoListData,
 });

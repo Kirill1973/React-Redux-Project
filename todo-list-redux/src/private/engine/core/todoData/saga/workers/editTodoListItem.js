@@ -3,11 +3,11 @@ import { todoListDataActions } from '../../actions';
 
 const getDataFromTodoList = state => state.todoListData.get('todoListArray');
 
-export function* togglePropertiesTodoList({ payload: itemId, value }) {
+export function* editTodoListItem({ payload: itemId, term }) {
   const cardsData = yield select(getDataFromTodoList);
   const idx = cardsData.findIndex(item => item.id === itemId);
   const item = cardsData[idx];
-  const newItem = { ...item, [value]: !item[value] };
-  const newArr = [...cardsData.slice(0, idx), newItem, ...cardsData.slice(idx + 1)];
-  yield put(todoListDataActions.onToggleProperties(newArr));
+  item.label = term;
+  const newArr = [...cardsData.slice(0, idx), item, ...cardsData.slice(idx + 1)];
+  yield put(todoListDataActions.onEditItem(newArr));
 }

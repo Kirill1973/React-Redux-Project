@@ -2,69 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85cca378-831c-47bc-a432-28c84d21caab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/jest/cssTransform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/jest/fileTransform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/modules.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/paths.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/pnpTs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpackDevServer.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/start.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/config/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/reducers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncAction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncTypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/watchers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/getData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/removeItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/toggleProperties.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/core/todoData/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/init/middleware/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/init/rootReducers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/init/rootSaga.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/engine/init/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/_helpers/img/check-mark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/_helpers/scss/variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/_helpers/siteData/tododata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/AddForm/AddForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/AddForm/AddForm.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/AddForm/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Done/Done.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Done/Done.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Done/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/RenderTasks/RenderTasks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/RenderTasks/RenderTasks.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/RenderTasks/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/SearchPanel/SearchPanel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/SearchPanel/SearchPanel.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/SearchPanel/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Spinner/Spinner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Spinner/Spinner.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/Spinner/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoList/TodoList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoList/TodoList.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoList/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoListItem/TodoListItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoListItem/TodoListItem.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/components/TodoListItem/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/container/App/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/container/App/App.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/container/App/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/container/Wrapper/Wrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/container/Wrapper/Wrapper.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/private/ui/container/Wrapper/index.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/removeTodoListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/config/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/config/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/asyncAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/asyncAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/asyncTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/asyncTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/watchers.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/watchers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/getTodoListData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/removeItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/toggleProperties.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/toggleProperties.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/init/rootReducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/init/rootReducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/engine/init/rootSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/engine/init/rootSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/AddForm/AddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/AddForm/AddForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/AddForm/AddForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/AddForm/AddForm.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/Done/Done.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/Done/Done.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/Done/Done.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/Done/Done.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/RenderTasks/RenderTasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/RenderTasks/RenderTasks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/SearchPanel/SearchPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/SearchPanel/SearchPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoList/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoList/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoList/TodoList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoList/TodoList.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoListItem/TodoListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoListItem/TodoListItem.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,11 +40,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/asyncAction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/actions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoList/TodoList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/Done/Done.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="20" column="103" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/toggleProperties.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/allItemsDone.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/reducers.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/types.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/searchTodoItems.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/addItemTodoList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,34 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/TodoList/TodoList.module.scss" />
-        <option value="$PROJECT_DIR$/src/components/TodoList/TodoList.js" />
-        <option value="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.js" />
-        <option value="$PROJECT_DIR$/src/components/RenderTasks/RenderTasks.js" />
-        <option value="$PROJECT_DIR$/src/container/Wrapper/Wrapper.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/data/saga/asyncTypes.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/data/saga/watchers.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/data/types.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/data/actions.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/init/routeReducers.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/init/middleware/index.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/private/ui/container/App/App.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/data/reducers.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/data/saga/asyncAction.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/data/saga/workers/getData.js" />
-        <option value="$PROJECT_DIR$/src/private/ui/components/AddForm/AddForm.js" />
-        <option value="$PROJECT_DIR$/src/private/ui/components/SearchPanel/SearchPanel.js" />
-        <option value="$PROJECT_DIR$/src/private/ui/components/Done/Done.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/removeItem/types.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/removeItem/saga/asyncTypes.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/removeItem/actions.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/removeItem/saga/asyncAction.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/removeItem/saga/workers/removeItemWorker.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/saga/asyncTypes.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/saga/asyncAction.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/types.js" />
-        <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/saga/workers/removeItem.js" />
         <option value="$PROJECT_DIR$/src/private/engine/config/api.js" />
         <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/saga/workers/getData.js" />
         <option value="$PROJECT_DIR$/src/private/engine/core/dataMain/actions.js" />
@@ -158,6 +189,34 @@
         <option value="$PROJECT_DIR$/src/private/ui/components/TodoListItem/TodoListItem.js" />
         <option value="$PROJECT_DIR$/src/private/engine/core/todoData/saga/watchers.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/getData.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/getTodoListData.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/removeItem.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/init/rootSaga.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/init/rootReducers.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/config/api.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/removeTodoListItem.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/toggleProperties.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/Done/Done.module.scss" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/AddForm/AddForm.module.scss" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/addItemTodoList.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoList/TodoList.module.scss" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/AddForm/AddForm.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/SearchPanel/SearchPanel.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/searchTodoItems.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/EditTodoListItem.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/editTodoListItem.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoList/TodoList.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/RenderTasks/RenderTasks.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoListItem/TodoListItem.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/asyncTypes.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/types.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/actions.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/watchers.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/asyncAction.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/ui/components/Done/Done.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/reducers.js" />
+        <option value="$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/allItemsDone.js" />
       </list>
     </option>
   </component>
@@ -172,6 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,14 +239,128 @@
               <item name="todo" type="b2602c69:ProjectViewProjectNode" />
               <item name="todo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="todoData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="todoData" type="462c0819:PsiDirectoryNode" />
+              <item name="saga" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="todoData" type="462c0819:PsiDirectoryNode" />
+              <item name="saga" type="462c0819:PsiDirectoryNode" />
+              <item name="workers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Done" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="TodoList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-list-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="container" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../todoCustom" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -239,18 +413,20 @@
       <workItem from="1561363055972" duration="24625000" />
       <workItem from="1561446279648" duration="3683000" />
       <workItem from="1561451142839" duration="17410000" />
-      <workItem from="1561532605219" duration="6907000" />
+      <workItem from="1561532605219" duration="22946000" />
+      <workItem from="1561619732312" duration="6000" />
+      <workItem from="1561620174859" duration="8267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119686000" />
+    <option name="totallyTimeSpent" value="143998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24765101" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26107383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -265,7 +441,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3069705" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -300,147 +476,49 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/container/App/App.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/TodoList/TodoList.module.scss" />
-    <entry file="file://$PROJECT_DIR$/src/components/RenderTasks/RenderTasks.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Done/Done.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/TodoList/TodoList.js" />
-    <entry file="file://$PROJECT_DIR$/src/container/Wrapper/Wrapper.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/immutable/dist/immutable-nonambient.d.ts" />
+    <entry file="file://$PROJECT_DIR$/src/private/ui/container/Wrapper/Wrapper.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/init/middleware/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/init/rootReducers.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/config/api.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/init/rootSaga.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/removeItem.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/RenderTasks/RenderTasks.module.scss" />
+    <entry file="file://$PROJECT_DIR$/.eslintrc" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/init/store.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/getData.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/toggleProperties.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncAction.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncTypes.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/actions.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/types.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/reducers.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/TodoList/TodoList.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/RenderTasks/RenderTasks.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/ui/components/TodoListItem/TodoListItem.js" />
+    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/watchers.js" />
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/public/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="8" />
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@redux-saga/core/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="168" column="2" selection-start-line="168" selection-start-column="2" selection-end-line="168" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/container/App/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/container/App/App.module.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/container/Wrapper/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/container/Wrapper/Wrapper.module.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/config/tododata.json" />
-    <entry file="file://$PROJECT_DIR$/src/private/ui/components/TodoList/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/container/App/App.js">
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/init/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/components/AddForm/AddForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/components/SearchPanel/SearchPanel.js">
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/init/rootSaga.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/components/Done/Done.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/components/Done/Done.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/reducers.js" />
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/types.js" />
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/saga/asyncAction.js" />
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/saga/asyncTypes.js" />
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/saga/watchers.js" />
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/actions.js" />
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/removeItem/saga/workers/removeItemWorker.js" />
-    <entry file="file://$PROJECT_DIR$/src/private/ui/components/TodoList/TodoList.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/immutable/dist/immutable-nonambient.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="795" column="4" selection-start-line="795" selection-start-column="4" selection-end-line="795" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/container/Wrapper/Wrapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/init/middleware/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/init/rootReducers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/config/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/init/rootSaga.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="153">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
@@ -448,132 +526,214 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/removeItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/components/RenderTasks/RenderTasks.module.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="104" column="35" lean-forward="true" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/init/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/getData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/workers/toggleProperties.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/asyncTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/types.js">
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/init/rootReducers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="22" />
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/reducers.js">
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/config/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="102">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/RenderTasks/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/Done/Done.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/AddForm/AddForm.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/_helpers/siteData/tododata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoList/TodoList.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/getTodoListData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/SearchPanel/SearchPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/AddForm/AddForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/removeTodoListItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/RenderTasks/RenderTasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoListItem/TodoListItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="56" column="120" selection-start-line="56" selection-start-column="120" selection-end-line="56" selection-end-column="120" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/editTodoListItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/asyncTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/watchers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/addItemTodoList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/TodoList/TodoList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/toggleProperties.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/asyncAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/ui/components/Done/Done.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="20" column="103" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/searchTodoItems.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/reducers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/components/TodoList/TodoList.js">
+    <entry file="file://$PROJECT_DIR$/todo-list-redux/src/private/engine/core/todoData/saga/workers/allItemsDone.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/components/RenderTasks/RenderTasks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/ui/components/TodoListItem/TodoListItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="34" column="108" selection-start-line="34" selection-start-column="108" selection-end-line="34" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/engine/core/todoData/saga/watchers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
