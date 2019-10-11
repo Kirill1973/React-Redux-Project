@@ -6,17 +6,33 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { asyncActionTodoList } from '../../../engine/core/todoData/saga/asyncAction';
 import Style from './AddForm.module.scss';
 
+const mapStateToProps = state => ({
+  error: state.todoListData.get('error'),
+});
+
 const mapDispatchToProps = {
   addItem: asyncActionTodoList.addItemAsync,
 };
 
 @connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps,
 )
 
 export default class AddForm extends Component {
   textInput = React.createRef();
+
+  state = {
+    valueTerm: '',
+  }
+
+  componentDidUpdate() {
+    const { error } = this.props;
+    const { valueTerm } = this.state;
+    if (error.length !== 0) {
+      this.textInput.current.value = valueTerm;
+    }
+  }
 
   onSubmit = (event) => {
     event.preventDefault();
@@ -24,8 +40,9 @@ export default class AddForm extends Component {
     const { addItem } = this.props;
     if (value.length !== 0) {
       addItem(value);
+      this.textInput.current.value = '';
     }
-    this.textInput.current.value = '';
+    this.setState({ valueTerm: value });
   };
 
   render() {
@@ -43,4 +60,5 @@ export default class AddForm extends Component {
 
 AddForm.propTypes = {
   addItem: PropTypes.func,
+  error: PropTypes.string,
 };

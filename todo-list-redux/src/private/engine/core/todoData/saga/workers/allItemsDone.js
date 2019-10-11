@@ -16,5 +16,5 @@ export function* allItemsDone() {
     }
   }
   const newArr = [...itemsDone, ...simpleItems];
-  yield put(todoListDataActions.onAllItemsDone(newArr));
+  yield put(todoListDataActions.onUpdateItems(newArr));
 }

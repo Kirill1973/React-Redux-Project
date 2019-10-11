@@ -9,5 +9,5 @@ export function* togglePropertiesTodoList({ payload: itemId, value }) {
   const item = cardsData[idx];
   const newItem = { ...item, [value]: !item[value] };
   const newArr = [...cardsData.slice(0, idx), newItem, ...cardsData.slice(idx + 1)];
-  yield put(todoListDataActions.onToggleProperties(newArr));
+  yield put(todoListDataActions.onUpdateItems(newArr));
 }

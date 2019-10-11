@@ -45,7 +45,7 @@
         margin-left: 45px;
         margin-top: 2px;
         border: none;
-        width: 359px;
+        width: 238px;
         padding: 7px 8px;
         background: none;
     }
@@ -67,6 +67,12 @@
     }
     &__ButtonImportant:focus, &__ButtonEdit:focus, &__ButtonDelete:focus {
         outline: none;
+    }
+    &__link {
+        color: #495057;
+        text-decoration: none;
+        margin-top: 8px;
+        margin-left: 30px;
     }
 }
 

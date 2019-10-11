@@ -1,14 +1,18 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { store } from '../../../engine/init/store';
+import { ConnectedRouter } from 'connected-react-router';
+import { store, history } from '../../../engine/init/store';
 import Wrapper from '../Wrapper';
 import Style from './App.module.scss';
 
+
 const App = () => (
   <Provider store={store}>
-    <div className={Style.App}>
-      <Wrapper />
-    </div>
+    <ConnectedRouter history={history}>
+      <div className={Style.App}>
+        <Wrapper />
+      </div>
+    </ConnectedRouter>
   </Provider>
 );
 

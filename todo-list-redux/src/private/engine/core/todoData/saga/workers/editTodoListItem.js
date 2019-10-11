@@ -9,5 +9,5 @@ export function* editTodoListItem({ payload: itemId, term }) {
   const item = cardsData[idx];
   item.label = term;
   const newArr = [...cardsData.slice(0, idx), item, ...cardsData.slice(idx + 1)];
-  yield put(todoListDataActions.onEditItem(newArr));
+  yield put(todoListDataActions.onUpdateItems(newArr));
 }

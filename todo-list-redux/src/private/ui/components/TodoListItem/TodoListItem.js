@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import cx from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -57,6 +58,9 @@ export default class TodoListItem extends Component {
           <form onSubmit={this.onSubmit}>
             <input type="text" ref={this.textInput} className={classNameEdit} disabled={!edit} onKeyDown={this.onKeyDown} />
           </form>
+          <Link to={`/${id}`} className={Style.Item__link}>
+            детали
+          </Link>
         </div>
         <div className={Style.Item__Buttons}>
           <button type="button" className={className} onClick={() => onToggleProperties(id, 'important')}>

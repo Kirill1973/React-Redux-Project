@@ -1,5 +1,7 @@
 import createSagaMiddleware from 'redux-saga';
 import { createLogger } from 'redux-logger';
+import { createBrowserHistory } from 'history';
+import { routerMiddleware } from 'connected-react-router';
 
 const logger = createLogger({
   duration: true,
@@ -13,9 +15,12 @@ const logger = createLogger({
   },
 });
 
+export const history = createBrowserHistory();
+
 const dev = process.env.NODE_ENV === 'development';
 const sagaMiddleware = createSagaMiddleware();
-const middleware = [sagaMiddleware];
+const routerMiddleWare = routerMiddleware(history);
+const middleware = [sagaMiddleware, routerMiddleWare];
 
 if (dev) {
   middleware.push(logger);

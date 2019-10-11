@@ -1,0 +1,60 @@
+@import '../../_helpers/scss/variables';
+
+.TodoItemDetails {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__Title2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #495057;
+  }
+  &__ButtonGroup {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__ButtonItem {
+    background: #2196f3;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  &__Link {
+    color: #495057;
+    text-decoration: none;
+    margin-top: 12px;
+  }
+  &__Title {
+    font-size: $main-size;
+    color: $color-font;
+    margin-left: 45px;
+    margin-top: 2px;
+    border: none;
+    width: 238px;
+    padding: 7px 8px;
+    background: none;
+  }
+  &__Active {
+    display: block !important;
+  }
+  &__Input {
+    width: 350px;
+    height: 34px;
+    padding: 0 12px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  &__Input:focus {
+    outline: none;
+  }
+  &__Form {
+    margin-top: 30px;
+    display: none;
+  }
+}

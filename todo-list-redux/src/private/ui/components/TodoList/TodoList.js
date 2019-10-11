@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { asyncActionTodoList } from '../../../engine/core/todoData/saga/asyncAction';
 import Spinner from '../Spinner';
 import Style from './TodoList.module.scss';
-import RenderTasks from '../RenderTasks';
+import RenderTodoListData from '../RenderTodoListData';
+import ErrorIndicator from '../ErrorIndicator';
 
 const mapStateToProps = state => ({
   data: state.todoListData.get('todoListArray'),
   searchTerm: state.todoListData.get('searchTerm'),
-  loading: state.todoListData.get('success'),
+  loading: state.todoListData.get('loading'),
+  error: state.todoListData.get('error'),
 });
 
 const mapDispatchToProps = {
@@ -27,8 +28,10 @@ const mapDispatchToProps = {
 
 export default class TodoList extends Component {
   componentDidMount() {
-    const { getData } = this.props;
-    setTimeout(() => (getData()), 2000);
+    const { getData, data } = this.props;
+    if (data.length === 0) {
+      setTimeout(() => (getData()), 2000);
+    }
   }
 
   searchItem = (arr, term) => {
@@ -48,38 +51,20 @@ export default class TodoList extends Component {
 
   render() {
     const {
-      data, removeItem, onToggleProperties, searchTerm, onEditItem, loading,
+      data, removeItem, onToggleProperties, searchTerm, onEditItem, loading, error,
     } = this.props;
     const visibleArrData = this.filterItems(this.searchItem(data, searchTerm));
-    if (visibleArrData && loading) {
+    if (error.length > 0) {
+      return <ErrorIndicator />;
+    }
+    if (visibleArrData && !loading) {
       return (
-        <div className={Style.TodoItems}>
-          <ReactCSSTransitionGroup
-            transitionName={{
-              enter: Style.ExampleEnter,
-              enterActive: Style.ExampleEnterActive,
-              leave: Style.ExampleLeave,
-              leaveActive: Style.ExampleLeaveActive,
-            }}
-            transitionEnterTimeout={500}
-            transitionLeaveTimeout={500}
-          >
-            {
-              visibleArrData.map((item) => {
-                const { id } = item;
-                return (
-                  <RenderTasks
-                    key={id}
-                    item={item}
-                    removeItem={removeItem}
-                    onToggleProperties={onToggleProperties}
-                    onEditItem={onEditItem}
-                  />
-                );
-              })
-            }
-          </ReactCSSTransitionGroup>
-        </div>
+        <RenderTodoListData
+          removeItem={removeItem}
+          onToggleProperties={onToggleProperties}
+          onEditItem={onEditItem}
+          visibleArrData={visibleArrData}
+        />
       );
     }
     return (
@@ -98,4 +83,5 @@ TodoList.propTypes = {
   onToggleProperties: PropTypes.func,
   onEditItem: PropTypes.func,
   loading: PropTypes.bool,
+  error: PropTypes.string,
 };

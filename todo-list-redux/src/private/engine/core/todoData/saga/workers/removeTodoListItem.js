@@ -7,5 +7,5 @@ export function* removeTodoListItem({ payload: itemId }) {
   const cardsData = yield select(getDataFromTodoList);
   const idx = cardsData.findIndex(item => item.id === itemId);
   const newArr = [...cardsData.slice(0, idx), ...cardsData.slice(idx + 1)];
-  yield put(todoListDataActions.removeItem(newArr));
+  yield put(todoListDataActions.onUpdateItems(newArr));
 }

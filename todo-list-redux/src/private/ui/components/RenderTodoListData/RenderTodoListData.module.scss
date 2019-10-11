@@ -1,0 +1,27 @@
+.TodoItems {
+  margin-top: 26px;
+  transition: 3s;
+}
+
+.Spinner {
+  display: flex;
+  justify-content: center;
+}
+
+.ExampleEnter {
+  transform: translateX(-100%);
+}
+
+.ExampleEnter.ExampleEnterActive {
+  transform: translateX(0);
+  transition: transform 0.5s ease ;
+}
+
+.ExampleLeave {
+  transform: translateX(0);
+}
+
+.ExampleLeave.ExampleLeaveActive {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease ;
+}
